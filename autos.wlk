@@ -73,3 +73,10 @@ object nitrogeno {
   method nivelMinimo() = 0
   method condicion(litros) = litros * 2 * 10
 }
+object elIntocable {
+  var estaEnCondiciones = true
+  method estaEnCondiciones() = estaEnCondiciones
+  method pruebaVelocidad() {estaEnCondiciones = false}
+  method reparar() {estaEnCondiciones = true}
+  method velocidad() = 45
+}
